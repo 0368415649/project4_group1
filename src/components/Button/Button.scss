@@ -1,0 +1,40 @@
+.Button {
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--primary);
+  border-color: var(--primary);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0 24px;
+  cursor: pointer;
+
+  &.outline {
+    border: 1px solid var(--border);
+    background-color: transparent;
+    color: var(--text);
+  }
+
+  &.lg {
+    height: 48px;
+  }
+
+  &:not(:disabled):hover {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    background-color: var(--disabled);
+    color: var(--on-disabled);
+    cursor: not-allowed;
+  }
+
+  .button-start-icon {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+  }
+}

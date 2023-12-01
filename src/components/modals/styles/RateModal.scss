@@ -1,0 +1,21 @@
+.RateModal {
+  .stars {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .star {
+    width: 36px;
+    height: 36px;
+    fill: var(--disabled);
+    stroke: var(--disabled);
+
+    &.actived,
+    &.actived-hover {
+      fill: var(--yellow);
+      stroke: var(--yellow);
+    }
+  }
+}

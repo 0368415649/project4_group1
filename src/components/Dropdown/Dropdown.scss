@@ -1,0 +1,51 @@
+.Dropdown {
+  position: relative;
+  height: 48px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  font-size: 16px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+  &.disabled {
+    pointer-events: none;
+  }
+
+  .chevron-down-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100% + 4px);
+    background-color: var(--white);
+    z-index: 2;
+    left: 0;
+    right: 0;
+    border-radius: 8px;
+    max-height: 192px;
+    overflow-y: auto;
+
+    .option {
+      height: 48px;
+      display: flex;
+      align-items: center;
+      padding: 8px 16px;
+
+      &:hover {
+        background-color: var(--black10);
+      }
+    }
+  }
+}

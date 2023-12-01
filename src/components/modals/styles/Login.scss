@@ -1,0 +1,29 @@
+.Login {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  .text_r {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .forgot-password {
+    color: var(--primary);
+    text-align: right;
+    cursor: pointer;
+    margin: 12px 0;
+  }
+
+  .register-switch {
+    text-align: center;
+    margin-top: 16px;
+
+    .switch {
+      color: var(--primary);
+      text-decoration: none;
+      margin-top: 4px;
+      cursor: pointer;
+    }
+  }
+}

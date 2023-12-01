@@ -1,0 +1,42 @@
+.TabSwitcher {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+
+  .TabSwitcher-option {
+    flex: 1;
+    padding: 12px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 15px;
+    
+    & + .TabSwitcher-option {
+      position: relative;
+
+      &:before {
+        content: '';
+        width: 1px;
+        height: 60%;
+        background-color: var(--black10);
+        position: absolute;
+        top: 50%;
+        left: -0.5px;
+        transform: translateY(-50%);
+      }
+    }
+
+    &:hover {
+      background-color: var(--black5);
+    }
+
+    &.actived {
+      cursor: default;
+      background-color: var(--primary);
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.ActionRent {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 16px;
+  background-color: var(--primary20);
+
+  .price {
+    span {
+      color: var(--primary);
+      font-size: 32px;
+      font-weight: 700;
+    }
+  }
+
+  .pick-date {
+    padding: 16px;
+    background-color: var(--white);
+    border-radius: 16px;
+
+    .title {
+      margin-bottom: 4px;
+    }
+
+    .pick {
+      display: flex;
+      align-items: stretch;
+      gap: 8px;
+
+      .date-input {
+        width: 60%;
+        height: inherit;
+
+        .DatePicker-handler {
+          height: 100%;
+        }
+      }
+
+      .time-dropdown {
+        flex: 1;
+      }
+    }
+  }
+
+  .address {
+    padding: 16px;
+    background-color: var(--white);
+    border-radius: 16px;
+
+    .title {
+      margin-bottom: 4px;
+    }
+
+    .value {
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  .fee {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    .title {
+    }
+
+    .value {
+      color: var(--black70);
+
+      span {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--black);
+      }
+    }
+  }
+
+  .total-fee {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    .title {
+    }
+
+    .value {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+}

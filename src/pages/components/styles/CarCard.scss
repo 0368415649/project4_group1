@@ -1,0 +1,107 @@
+
+.CarCard {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+  border: 1px solid var(--border);
+  padding: 15px;
+  border-radius: 12px;
+  background-color: var(--white);
+  cursor: pointer;
+
+  .imgs {
+    width: 100%;
+    height: 200px;
+
+    img.car {
+      border-radius: 12px;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+  .car-name {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 800;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .car-info {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .block-info2{
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    gap: 8px;
+    color: #5f5f5f !important;
+    font-size: .65rem;
+    font-weight: 500;
+    line-height: 16px;
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .car_pro_name_sen {
+    width: 100%;
+    height: 0.5px;
+    background-color: #bebebe;
+    margin: 10px 0px 0px;
+}
+
+  .block-info {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    margin-top: 16px;
+
+    span {
+      font-weight: 500;
+    }
+
+    .star-icon {
+      color: var(--yellow);
+    }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .car-count {
+      display: flex;
+    }
+  }
+.rate_color{
+  color: rgb(255, 198, 52) !important;
+}
+  .price {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-top: 16px;
+  }
+
+  .actions {
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+    margin-top: 16px;
+
+    > * {
+      flex: 1;
+    }
+  }
+}
+.CarCard2{
+  max-width: 230px;
+}

@@ -1,0 +1,99 @@
+.Filter {
+  position: relative;
+  z-index: 10;
+  .top-section {
+    background-color: var(--white);
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    border-radius: 10px;
+  }
+
+  .filter-input {
+    width: 360px;
+  }
+
+  .filter-btns {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .filter-btn {
+      font-weight: 400;
+      height: 36px;
+      padding: 0 16px;
+    }
+  }
+
+  .filter-section {
+    width: 100%;
+    margin-top: -16px;
+    background-color: var(--white);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 24px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 16px;
+
+    &:has(.filter-child-section.price.active) {
+      width: fit-content;
+    }
+
+    &:not(:has(.filter-child-section.active)) {
+      padding: 0;
+    }
+
+    .filter-child-section {
+      align-items: stretch;
+      gap: 16px;
+      grid-template-columns: repeat(3, 1fr);
+      display: none;
+
+      &.active {
+        display: grid;
+      }
+
+      &.automaker {
+        grid-template-columns: repeat(6, 1fr);
+      }
+
+      &.price {
+        width: fit-content;
+        grid-template-columns: repeat(2, 350px);
+      }
+    }
+
+    .filter-child-btn {
+      flex-direction: column;
+      font-weight: 400;
+      height: auto;
+      padding-top: 8px;
+      padding-bottom: 8px;
+
+      &.actived {
+        border: 1px solid var(--primary);
+        background-color: var(--primary10);
+      }
+    }
+
+    .btn {
+      &-type {
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      &-automaker {
+        img {
+          width: 32px;
+        }
+      }
+    }
+  }
+}

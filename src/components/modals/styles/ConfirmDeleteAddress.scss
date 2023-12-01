@@ -1,0 +1,21 @@
+.ConfirmDeleteAddress {
+  h4 {
+    font-size: 20px;
+
+    div {
+      font-weight: 700;
+      word-break: break-all;
+    }
+  }
+
+  .actions {
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+    margin-top: 16px;
+
+    & > button {
+      flex: 1;
+    }
+  }
+}

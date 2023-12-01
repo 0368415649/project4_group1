@@ -1,0 +1,55 @@
+.Header {
+  padding: 2px 280px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  align-items: center;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: var(--z-index-header);
+
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    .register-btn {
+      cursor: pointer;
+    }
+
+    .login-btn {
+      padding: 0 16px;
+      height: 44px;
+    }
+
+    .link {
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .link-profile {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-weight: 700;
+      font-size: 14px;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .divider {
+    width: 1px;
+    align-self: stretch;
+    background-color: var(border);
+    margin: 0;
+    height: unset;
+  }
+}

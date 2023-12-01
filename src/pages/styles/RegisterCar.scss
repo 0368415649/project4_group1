@@ -1,0 +1,18 @@
+.RegisterCar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  img {
+    width: 360px;
+  }
+
+  .register-car-btn {
+    margin-top: 24px;
+  }
+}

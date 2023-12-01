@@ -1,0 +1,14 @@
+.Comment {
+  border: 1px solid var(--black20);
+  border-radius: 8px;
+  padding: 16px 12px;
+  margin-top: 12px;
+
+  .date {
+    margin-left: auto;
+  }
+
+  .info {
+    margin-left: 8px;
+  }
+}

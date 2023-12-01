@@ -1,0 +1,38 @@
+.Modal {
+  width: 424px;
+  border-radius: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: var(--z-index-modal);
+  background-color: var(--white);
+
+  .Modal-heading {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .label {
+      flex: 1;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 50%;
+      right: 24px;
+      width: 24px;
+      height: 24px;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+  }
+
+  .Modal-body {
+    padding: 24px;
+  }
+}

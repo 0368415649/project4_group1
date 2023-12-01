@@ -1,0 +1,114 @@
+.Rent {
+  width: 600px;
+  padding: 5px 20px;
+}
+.grap_com {
+  border: 1px solid #cdcccc;
+  border-radius: 4px;
+  padding: 5px 15px;
+}
+.comfirm_infor {
+  padding: 7px 10px;
+  border-bottom: 1px solid #b7b7b7;
+}
+.address-row {
+  border: 1px solid var(--black20);
+  padding: 8px;
+  border-radius: 8px;
+
+  &.active {
+    border-color: var(--primary);
+  }
+}
+.btn_buyy {
+  cursor: pointer;
+  font-weight: 700;
+  color: #fff;
+  background-color: #5fcf86;
+  border-color: #5fcf86;
+  padding: 14px 0px;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  height: 20px;
+  margin-top: 20px;
+}
+.adddress_a {
+  color: #5fcf86;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.comfirm_infor{
+  font-size: 13px !important;
+}
+.comfirm_infor .text-black-50{
+  font-size: 13px !important;
+}
+.comfirm_infor2{
+  font-size: 13px !important;
+  padding: 7px 10px;
+}
+.comfirm_infor2 .text-black-50{
+  font-size: 13px !important;
+}
+.mail_width {
+  padding: 20px;
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+  left: 18%;
+  top: 20%;
+  right: 37% !important;
+  width: 400px;
+  z-index: 10;
+  border-radius: 10px;
+  border: 1px solid #cdcccc;
+}
+.close_button_grap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.login-text {
+  text-align: center;
+  padding: 20px;
+  font-size: 25px;
+  color: #595959;
+  font-weight: 600;
+}
+.text_phone {
+  font-size: 14px;
+  color: #717070;
+  font-weight: 500;
+  margin-bottom: 3px;
+  margin: 5px 0px;
+}
+.btn_login {
+  cursor: pointer;
+  font-weight: 700;
+  color: #fff;
+  background-color: #5fcf86;
+  border-color: #5fcf86;
+  padding: 14px 0px;
+  border-radius: 10px;
+}
+.close-btn {
+  position: absolute;
+  top: 15%;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.bg-dr_2 {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  background-color: #040404 !important;
+  opacity: 0.6 !important;
+  z-index: 11111 !important;
+}
